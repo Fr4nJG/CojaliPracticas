@@ -56,13 +56,8 @@ const agregarEstudio = () => {
 btnAgregar.addEventListener('click', agregarEstudio);
 cargarEstudios();
 
-
-
-
-
-
 const inputGithub = document.getElementById('input-github');
-const btnGithub = document.getElementById('btn-github');
+const btnGithub   = document.getElementById('btn-github');
 const listaGithub = document.getElementById('lista-github');
 
 const buscarProyectos = async () => {
@@ -73,6 +68,8 @@ const buscarProyectos = async () => {
 
     try {
         const respuesta = await fetch(`https://api.github.com/users/${usuario}/repos`);
+        if (!respuesta.ok) throw new Error('Usuario no encontrado');
+
         const repos = await respuesta.json();
         listaGithub.innerHTML = '';
 
