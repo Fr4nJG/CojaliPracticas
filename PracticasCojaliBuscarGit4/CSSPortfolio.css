@@ -1,0 +1,107 @@
+body {
+    background-color: #704214;
+    color: #eef0f8;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: green;
+    text-align: center;
+    position: relative;
+    padding: 16px;
+}
+header h1 {
+    color: white;
+    margin: 0 0 8px 0;
+}
+header p {
+    color: white;
+    margin: 0;
+}
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+section {
+    background-color: black;
+    margin-bottom: 20px;
+}
+section h2 {
+    color: #eef0f8;
+    margin-top: 0;
+}
+img {
+    border: 2px solid white;
+    border-radius: 6px;
+    display: block;
+    margin-top: 10px;
+}
+
+#theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+@media (min-width: 600px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    img {
+        grid-column: 1 / -1;
+    }
+}
+
+body.light-theme {
+    background-color: #f5e6d3;
+    color: #2c1a0e;
+}
+body.light-theme section {
+    background-color: #fff8f0;
+}
+body.light-theme section h2 {
+    color: #2c1a0e;
+}
+body.light-theme .form-grupo label {
+    color: #555;
+}
+body.light-theme .form-grupo input,
+body.light-theme .form-grupo select {
+    background-color: #fff;
+    color: #2c1a0e;
+    border-color: #aaa;
+}
+
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-grupo input,
+.form-grupo select {
+    border-radius: 6px;
+    border: 1px solid #555;
+    background-color: #1a1a1a;
+    color: #eef0f8;
+}
+
+#btn-agregar {
+    align-self: flex-start;
+    background-color: rgb(72, 80, 241);
+    color: white;
+    border-radius: 20px;
+}
+
+.haciendo {
+    color: green;
+    font-family: sans-serif;
+}
+
