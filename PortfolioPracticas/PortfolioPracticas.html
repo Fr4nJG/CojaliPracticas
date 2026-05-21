@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="CSSPortfolio.css">
+</head>
+
+<body>
+    <header>
+        <h1>Francisco José Gómez Calcerrada García Mascaraque</h1>
+        <p>Estudiante de 1ºDAW</p>
+        <button id="boton">Tema claro</button>
+    </header>
+
+    <main>
+        <section>
+            <h2>Estudios:</h2>
+            <ul id="lista-estudios">
+            </ul>
+        </section>
+
+        <section>
+            <h2>Hobbies:</h2>
+            <ul>
+                <li>Respirar</li>
+                <li>Beber agua</li>
+                <li>Jugar videojuegos (Minecraft, Terraria, Valorant, etc)</li>
+            </ul>
+        </section>
+
+        <section id="seccion-agregar-estudio">
+            <h2>Agregar estudio:</h2>
+            <div class="form-grupo">
+                <label for="input-estudio">Nombre del estudio:</label>
+                <input type="text" id="input-estudio">
+            </div>
+            <div class="form-grupo">
+                <label for="select-estado">Estado:</label>
+                <select id="select-estado">
+                    <option value="Completado">Completado</option>
+                    <option value="Cursándolo">Cursándolo</option>
+                </select>
+            </div>
+            <button id="btn-agregar">+ Agregar</button>
+        </section>
+
+        <img src="image.jpg" alt="REMEMBER WHO YOU ARE" width="200">
+    </main>
+
+    <script src="JSPortfolio.js"></script>
+</body>
+
+</html>
